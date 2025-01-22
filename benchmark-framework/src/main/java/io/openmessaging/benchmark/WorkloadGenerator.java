@@ -346,6 +346,10 @@ public class WorkloadGenerator implements AutoCloseable {
         result.messageSize = workload.messageSize;
         result.producersPerTopic = workload.producersPerTopic;
         result.consumersPerTopic = workload.consumerPerSubscription;
+        result.totalBytesSent = 0L;
+        result.totalBytesReceived = 0L;
+        result.totalMessagesSent = 0L;
+        result.totalMessagesReceived = 0L;
 
         while (true) {
             try {
@@ -372,8 +376,13 @@ public class WorkloadGenerator implements AutoCloseable {
                             workload.subscriptionsPerTopic * stats.totalMessagesSent
                                     - stats.totalMessagesReceived);
 
+            result.totalBytesSent += stats.bytesSent;
+            result.totalMessagesSent += stats.messagesSent;
+            result.totalBytesReceived += stats.bytesReceived;
+            result.totalMessagesReceived += stats.messagesReceived;
+
             log.info(
-                    "Pub rate {} msg/s / {} MB/s | Pub err {} err/s | Cons rate {} msg/s / {} MB/s | Backlog: {} K | Pub Latency (ms) avg: {} - 50%: {} - 99%: {} - 99.9%: {} - Max: {} | Pub Delay Latency (us) avg: {} - 50%: {} - 99%: {} - 99.9%: {} - Max: {}",
+                    "Pub rate {} msg/s / {} MB/s | Pub err {} err/s | Cons rate {} msg/s / {} MB/s | Backlog: {} K | Pub Latency (ms) avg: {} - 50%: {} - 99%: {} - 99.9%: {} - Max: {} | Pub Delay Latency (us) avg: {} - 50%: {} - 99%: {} - 99.9%: {} - Max: {} | Bytes {} Messages {}",
                     rateFormat.format(publishRate),
                     throughputFormat.format(publishThroughput),
                     rateFormat.format(errorRate),
@@ -389,7 +398,9 @@ public class WorkloadGenerator implements AutoCloseable {
                     dec.format(stats.publishDelayLatency.getValueAtPercentile(50)),
                     dec.format(stats.publishDelayLatency.getValueAtPercentile(99)),
                     dec.format(stats.publishDelayLatency.getValueAtPercentile(99.9)),
-                    throughputFormat.format(stats.publishDelayLatency.getMaxValue()));
+                    throughputFormat.format(stats.publishDelayLatency.getMaxValue()),
+                    result.totalBytesSent,
+                    result.totalMessagesSent);
 
             result.publishRate.add(publishRate);
             result.publishErrorRate.add(errorRate);
