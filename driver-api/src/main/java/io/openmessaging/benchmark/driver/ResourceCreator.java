@@ -85,8 +85,9 @@ public class ResourceCreator<R, C> {
                                             created.add(result.created);
                                             succeeded.incrementAndGet();
                                         } else {
-                                            //noinspection ResultOfMethodCallIgnored
-                                            queue.offer(resource);
+                                            if (!queue.offer(resource)) {
+                                                log.debug("Queue overflow");
+                                            }
                                         }
                                     });
                     batch.clear();
