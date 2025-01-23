@@ -32,7 +32,7 @@
 
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.openmessaging.benchmark</groupId>
@@ -102,7 +102,7 @@
         <maven.enforcer.plugin.version>3.1.0</maven.enforcer.plugin.version>
         <maven.surefire.plugin.version>3.0.0-M7</maven.surefire.plugin.version>
         <spotbugs.plugin.version>4.8.6.6</spotbugs.plugin.version>
-        <spotless.plugin.version>2.25.0</spotless.plugin.version>
+        <spotless.plugin.version>2.44.2</spotless.plugin.version>
     </properties>
 
     <dependencyManagement>

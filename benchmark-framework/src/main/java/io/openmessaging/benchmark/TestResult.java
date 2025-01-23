@@ -28,7 +28,6 @@
  */
 package io.openmessaging.benchmark;
 
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;

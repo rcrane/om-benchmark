@@ -41,7 +41,6 @@
  */
 package io.openmessaging.benchmark.utils.distributor;
 
-
 import com.google.common.io.BaseEncoding;
 import java.util.Random;
 

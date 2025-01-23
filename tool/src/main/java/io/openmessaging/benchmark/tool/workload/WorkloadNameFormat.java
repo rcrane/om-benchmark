@@ -28,7 +28,6 @@
  */
 package io.openmessaging.benchmark.tool.workload;
 
-
 import io.openmessaging.benchmark.Workload;
 import java.util.HashMap;
 import java.util.Map;

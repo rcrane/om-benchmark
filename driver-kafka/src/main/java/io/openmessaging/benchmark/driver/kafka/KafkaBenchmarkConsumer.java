@@ -28,7 +28,6 @@
  */
 package io.openmessaging.benchmark.driver.kafka;
 
-
 import io.openmessaging.benchmark.driver.BenchmarkConsumer;
 import io.openmessaging.benchmark.driver.ConsumerCallback;
 import java.time.Duration;

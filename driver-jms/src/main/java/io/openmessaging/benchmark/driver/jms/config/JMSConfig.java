@@ -29,7 +29,6 @@
 
 package io.openmessaging.benchmark.driver.jms.config;
 
-
 import java.util.ArrayList;
 import java.util.List;
 

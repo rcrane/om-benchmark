@@ -28,7 +28,6 @@
  */
 package io.openmessaging.benchmark.driver.nats;
 
-
 import io.nats.client.api.StorageType;
 
 public class NatsConfig {

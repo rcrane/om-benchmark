@@ -28,7 +28,6 @@
  */
 package io.openmessaging.benchmark.driver.natsStreaming;
 
-
 import io.nats.streaming.StreamingConnection;
 import io.openmessaging.benchmark.driver.BenchmarkConsumer;
 

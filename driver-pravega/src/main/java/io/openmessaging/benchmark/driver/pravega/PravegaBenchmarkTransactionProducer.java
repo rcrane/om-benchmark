@@ -28,7 +28,6 @@
  */
 package io.openmessaging.benchmark.driver.pravega;
 
-
 import com.google.errorprone.annotations.concurrent.GuardedBy;
 import io.openmessaging.benchmark.driver.BenchmarkProducer;
 import io.pravega.client.EventStreamClientFactory;

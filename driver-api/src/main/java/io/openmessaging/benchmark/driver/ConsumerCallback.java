@@ -28,7 +28,6 @@
  */
 package io.openmessaging.benchmark.driver;
 
-
 import java.nio.ByteBuffer;
 
 /** Callback that the driver implementation calls when a message is received. */

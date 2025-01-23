@@ -28,7 +28,6 @@
  */
 package io.openmessaging.benchmark.driver.artemis;
 
-
 import io.openmessaging.benchmark.driver.BenchmarkProducer;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;

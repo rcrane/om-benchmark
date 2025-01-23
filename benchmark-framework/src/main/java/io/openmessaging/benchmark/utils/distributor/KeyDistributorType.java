@@ -41,7 +41,6 @@
  */
 package io.openmessaging.benchmark.utils.distributor;
 
-
 import com.fasterxml.jackson.annotation.JsonEnumDefaultValue;
 
 public enum KeyDistributorType {

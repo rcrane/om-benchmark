@@ -28,7 +28,6 @@
  */
 package io.openmessaging.benchmark.driver.jms;
 
-
 import io.openmessaging.benchmark.driver.BenchmarkProducer;
 import io.openmessaging.benchmark.driver.jms.config.JMSConfig;
 import java.util.Collections;

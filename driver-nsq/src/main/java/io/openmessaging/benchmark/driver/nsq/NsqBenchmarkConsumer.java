@@ -28,7 +28,6 @@
  */
 package io.openmessaging.benchmark.driver.nsq;
 
-
 import com.github.brainlag.nsq.NSQConsumer;
 import io.openmessaging.benchmark.driver.BenchmarkConsumer;
 

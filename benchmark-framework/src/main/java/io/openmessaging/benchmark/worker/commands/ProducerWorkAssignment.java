@@ -28,7 +28,6 @@
  */
 package io.openmessaging.benchmark.worker.commands;
 
-
 import io.openmessaging.benchmark.utils.distributor.KeyDistributorType;
 import java.util.List;
 

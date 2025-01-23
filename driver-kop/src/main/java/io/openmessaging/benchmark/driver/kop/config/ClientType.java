@@ -28,7 +28,6 @@
  */
 package io.openmessaging.benchmark.driver.kop.config;
 
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public enum ClientType {

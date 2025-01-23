@@ -29,7 +29,6 @@
 
 package io.openmessaging.benchmark;
 
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.FileWriter;

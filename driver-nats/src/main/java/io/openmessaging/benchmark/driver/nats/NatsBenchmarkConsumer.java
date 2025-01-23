@@ -28,7 +28,6 @@
  */
 package io.openmessaging.benchmark.driver.nats;
 
-
 import io.openmessaging.benchmark.driver.BenchmarkConsumer;
 
 public class NatsBenchmarkConsumer implements BenchmarkConsumer {
