@@ -252,7 +252,10 @@
                 <artifactId>spotbugs-maven-plugin</artifactId>
                 <version>${spotbugs.plugin.version}</version>
                 <configuration>
-                    <excludeFilterFile>https://raw.githubusercontent.com/undertow-io/undertow/main/spotbugs-exclude.xml</excludeFilterFile>
+                    <excludeFilterFiles>
+                        <excludeFilterFile>local-spotbugs-exclude.xml</excludeFilterFile>
+                        <excludeFilterFile>https://raw.githubusercontent.com/undertow-io/undertow/main/spotbugs-exclude.xml</excludeFilterFile>
+                    </excludeFilterFiles>
                 </configuration>
                 <executions>
                     <execution>
