@@ -1,0 +1,13 @@
+name: Simple benchmark
+
+topics: 1
+partitionsPerTopic: 1
+messageSize: 100
+payloadFile: "payload/payload-100b.data"
+subscriptionsPerTopic: 1
+consumerPerSubscription: 1
+producersPerTopic: 1
+producerRate: 1000
+consumerBacklogSizeGB: 0
+testDurationMinutes: 5
+warmupDurationMinutes: 1
