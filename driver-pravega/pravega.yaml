@@ -34,7 +34,11 @@ driverClass: io.openmessaging.benchmark.driver.pravega.PravegaBenchmarkDriver
 # Pravega client-specific configuration
 client:
   controllerURI: tcp://localhost:9090
-  scopeName: examples
+  scopeName: example1
+  stream: example1
+  retentionPolicy:
+    type: SIZE
+    value: 10485760  # 10 MB in bytes
 
 writer:
   enableConnectionPooling: True
