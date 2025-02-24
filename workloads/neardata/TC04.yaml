@@ -18,8 +18,8 @@ name: Simple benchmark
 
 topics: 1
 partitionsPerTopic: 1
-messageSize: 1048576
-payloadFile: "payload/payload-1MB.data"
+messageSize: 768000
+payloadFile: "payload/payload-750Kb.data"
 subscriptionsPerTopic: 1
 consumerPerSubscription: 1
 producersPerTopic: 1
